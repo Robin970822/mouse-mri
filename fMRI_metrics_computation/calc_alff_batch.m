@@ -16,4 +16,5 @@ for i = 1:length(subj_names)
     save_dir1 = [data_root, filesep, subj_name, filesep, 'rest'];
     %开始计算alff和falff
     RatfMRI_alff_falff(nii_file,brain_mask,TR,band,rp_file,save_dir1);
+    disp([subj_name, 'Done.'])
 end
